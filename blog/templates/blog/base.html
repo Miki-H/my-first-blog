@@ -1,0 +1,37 @@
+{% load staticfiles %}
+	<head>
+		<title>Miki universe</title>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+		<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Quintessential" rel="stylesheet">
+	</head>
+	<body>
+    <div class="page-header">
+        <h1><a href="/">Kokoromi</a></h1>
+		<p><strong>Manao ahoana daholo, Tonga soa, Bienvenue, Welcome</strong>
+    </div>
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+			</div>
+		</div>
+	</div>
+		<div>
+		<br />
+            
+            <h2><a href=""><em> My first post </em></a></h2>
+            <p> Hey this is my first post. You shouldn't read or...? 
+			<p>published:  12.11.17, 11:55 </p>
+	</div>
+		<div>
+		<br />
+			<h2><a href=""><em> Thank you </em></a></h2>
+			<p> I just want to say thank you. But not to you :P
+			<p>published:  22.11.17, 16:00 </p>
+		</div>
+</body>
+</html>
